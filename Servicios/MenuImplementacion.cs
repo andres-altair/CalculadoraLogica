@@ -25,32 +25,8 @@ namespace CalculadoraLogica.Servicios
             Console.WriteLine("Seleccione una opcion: ");
             opcionseleccionada = Console.ReadKey(true).KeyChar-(0);
             return opcionseleccionada;
-            if (opcionseleccionada == '1')
-            {
-                Console.WriteLine("Ha seleccionado la opción igualdad. Introduzca la primera expresión:");
-                string a = Console.ReadLine();
-                Console.WriteLine("Introduzca la segunda expresión:");
-                string b = Console.ReadLine();
-                if (a == b)
-                {
-                    Console.WriteLine("Resultado de la igualdad: true");
-                }
-                else { Console.WriteLine("Resultado de la igualdad: false"); }
-
-
-            }
-            else (opcionseleccionada == '2')
-            {
-                Console.WriteLine("Ha seleccionado la opción igualdad. Introduzca la primera expresión:");
-                string a = Console.ReadLine();
-                Console.WriteLine("Introduzca la segunda expresión:");
-                string b = Console.ReadLine();
-                if (a != b)
-                {
-                    Console.WriteLine("Resultado de la igualdad: true");
-                }
-                else { Console.WriteLine("Resultado de la igualdad: false"); }
-            }
+            
+            
         }
     }
 }

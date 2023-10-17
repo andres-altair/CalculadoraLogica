@@ -6,21 +6,28 @@ using System.Threading.Tasks;
 
 namespace CalculadoraLogica.Servicios
 {
-    internal class CaLogC : caLog
+    internal class CaLogC : CaLogI
     {
-        int opcionSeleccionada = Console.ReadLine(true);
-         if (opcionSeleccionada == '1')
+        public string deigual()
+        {
+            string a = Console.ReadLine();
+            string b = Console.ReadLine();
+            if (a != b)
             {
-                Console.WriteLine("Ha seleccionado la opción igualdad. Introduzca la primera expresión:");
-                string a = Console.ReadLine();
-                Console.WriteLine("Introduzca la segunda expresión:");
-                string b = Console.ReadLine();
-                if (a == b)
-                {
-                    Console.WriteLine("Resultado de la igualdad: true");
-                }
-                else
-
+                Console.WriteLine("true");
             }
+            else { Console.WriteLine("fase"); }
+        }
+
+        public string igual()
+        {
+            string a = Console.ReadLine();
+            string b = Console.ReadLine();  
+            if (a == b)
+            {
+                Console.WriteLine("true");
+            }
+            else { Console.WriteLine("false"); }
+        }
     }
 }
