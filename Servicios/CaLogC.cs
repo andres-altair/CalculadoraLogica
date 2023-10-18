@@ -8,9 +8,11 @@ namespace CalculadoraLogica.Servicios
 {
     internal class CaLogC : CaLogI
     {
-        public string deigual()
+        public void deigual()
         {
+            Console.WriteLine("Escribe una palabra");
             string a = Console.ReadLine();
+            Console.WriteLine("Escribe una palabra");
             string b = Console.ReadLine();
             if (a != b)
             {
@@ -19,10 +21,12 @@ namespace CalculadoraLogica.Servicios
             else { Console.WriteLine("fase"); }
         }
 
-        public string igual()
+        public void igual()
         {
+            Console.WriteLine("Escribe una palabra");
             string a = Console.ReadLine();
-            string b = Console.ReadLine();  
+            Console.WriteLine("Escribe una palabra");
+            string b = Console.ReadLine();
             if (a == b)
             {
                 Console.WriteLine("true");

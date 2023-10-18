@@ -11,13 +11,13 @@ namespace CalculadoraLogica.Servicios
     /// metodo que devulve si coincide 
     /// </summary>
     /// <returns></returns>
-        public string igual();
+        public void igual();
 
         /// <summary>
         /// metodo que devuelve que no coincide
         /// </summary>
         /// <returns></returns>
-        public string deigual();
+        public void deigual();
 
     }
 }
